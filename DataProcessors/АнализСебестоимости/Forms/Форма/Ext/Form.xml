@@ -1,0 +1,830 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ОсновнойКонтейнер" id="142">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной контейнер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной контейнер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновнойКонтейнерРасширеннаяПодсказка" id="143"/>
+			<ChildItems>
+				<UsualGroup name="ЛеваяПанель" id="144">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Левая панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЛеваяПанельРасширеннаяПодсказка" id="145"/>
+					<ChildItems>
+						<UsualGroup name="ИсходныеДанныеАнализа" id="140">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходные данные анализа</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:Calibri12" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходные данные анализа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ИсходныеДанныеАнализаРасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<InputField name="Номенклатура" id="1">
+									<DataPath>Номенклатура</DataPath>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.Тип">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыМолочнойПродукции.EnumValue.ГотоваяПродукция</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="НоменклатураКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<UsualGroup name="АнализируемыйПериод" id="91">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Анализируемый период</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" height="12" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Анализируемый период</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="АнализируемыйПериодРасширеннаяПодсказка" id="92"/>
+									<ChildItems>
+										<InputField name="ДатаНачала" id="5">
+											<DataPath>ДатаНачала</DataPath>
+											<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<Font ref="style:Calibri12" kind="StyleItem"/>
+											<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="6"/>
+											<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="7"/>
+										</InputField>
+										<InputField name="ДатаОкончания" id="9">
+											<DataPath>ДатаОкончания</DataPath>
+											<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<Font ref="style:Calibri12" kind="StyleItem"/>
+											<ContextMenu name="ДатаОкончанияКонтекстноеМеню" id="10"/>
+											<ExtendedTooltip name="ДатаОкончанияРасширеннаяПодсказка" id="11"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФормироватьАнализ" id="158">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа формировать анализ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа формировать анализ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаФормироватьАнализРасширеннаяПодсказка" id="159"/>
+									<ChildItems>
+										<Button name="ФормаСформироватьАнализ" id="93">
+											<Type>UsualButton</Type>
+											<Width>30</Width>
+											<Height>1</Height>
+											<CommandName>Form.Command.СформироватьАнализ</CommandName>
+											<Font ref="style:Calibri12" height="14" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ExtendedTooltip name="ФормаСформироватьАнализРасширеннаяПодсказка" id="94"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СтруктураСебестоимости" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Структура себестоимости</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:Calibri12" height="14" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Структура себестоимости</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="СтруктураСебестоимостиРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<InputField name="СтоимостьСырья" id="17">
+									<DataPath>СтоимостьСырья</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость сырья</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="СтоимостьСырьяКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="СтоимостьСырьяРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="СтоимостьТруда" id="21">
+									<DataPath>СтоимостьТруда</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость труда</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="СтоимостьТрудаКонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="СтоимостьТрудаРасширеннаяПодсказка" id="23"/>
+								</InputField>
+								<InputField name="СтоимостьБрака" id="29">
+									<DataPath>СтоимостьБрака</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость брака</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="СтоимостьБракаКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="СтоимостьБракаРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="НакладныеРасходы" id="148">
+									<DataPath>НакладныеРасходы</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Накладные расходы</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="НакладныеРасходыКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="НакладныеРасходыРасширеннаяПодсказка" id="150"/>
+								</InputField>
+								<InputField name="СтоимостьУпаковки" id="33">
+									<DataPath>СтоимостьУпаковки</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость упаковки</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="СтоимостьУпаковкиКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="СтоимостьУпаковкиРасширеннаяПодсказка" id="35"/>
+								</InputField>
+								<InputField name="СебестоимостьЕдиницы" id="152">
+									<DataPath>СебестоимостьЕдиницы</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Себестоимость единицы</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="СебестоимостьЕдиницыКонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="СебестоимостьЕдиницыРасширеннаяПодсказка" id="154"/>
+								</InputField>
+								<InputField name="Себестоимость" id="13">
+									<DataPath>Себестоимость</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Полная себестоимость</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="СебестоимостьКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="СебестоимостьРасширеннаяПодсказка" id="15"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="РезультатыАнализа" id="132">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результаты анализа</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:Calibri12" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Результаты анализа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="РезультатыАнализаРасширеннаяПодсказка" id="133"/>
+							<ChildItems>
+								<InputField name="ИндексБрака" id="41">
+									<DataPath>ИндексБрака</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Индекс брака %</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=2; ЧГ=3</v8:content>
+										</v8:item>
+									</EditFormat>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="ИндексБракаКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="ИндексБракаРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ВыходПродукта" id="45">
+									<DataPath>ВыходПродукта</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выход продукта %</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=2; ЧГ=3</v8:content>
+										</v8:item>
+									</EditFormat>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="ВыходПродуктаКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ВыходПродуктаРасширеннаяПодсказка" id="47"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРентабельность" id="156">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа рентабельность</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа рентабельность</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРентабельностьРасширеннаяПодсказка" id="157"/>
+							<ChildItems>
+								<InputField name="Рентабельность" id="37">
+									<DataPath>Рентабельность</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Рентабельность %</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=2; ЧГ=3</v8:content>
+										</v8:item>
+									</EditFormat>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="РентабельностьКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="РентабельностьРасширеннаяПодсказка" id="39"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяПанель" id="146">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правая панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПраваяПанельРасширеннаяПодсказка" id="147"/>
+					<ChildItems>
+						<UsualGroup name="АнализИскусственногоИнтеллекта" id="134">
+							<ReadOnly>true</ReadOnly>
+							<EnableContentChange>true</EnableContentChange>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Анализ искусственного интеллекта</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:Calibri12" height="16" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Анализ искусственного интеллекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="АнализИскусственногоИнтеллектаРасширеннаяПодсказка" id="135"/>
+							<ChildItems>
+								<InputField name="ТекстАнализаИИ" id="136">
+									<DataPath>ТекстАнализаИИ</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текст анализа</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:Calibri12" height="12" kind="StyleItem"/>
+									<TitleLocation>Top</TitleLocation>
+									<Width>90</Width>
+									<Height>10</Height>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Font ref="style:Calibri12" kind="StyleItem"/>
+									<ContextMenu name="ТекстАнализаИИКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ТекстАнализаИИРасширеннаяПодсказка" id="138"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СтруктураЗатрат" id="128">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура затрат</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:Calibri12" height="16" kind="StyleItem"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура затрат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтруктураЗатратРасширеннаяПодсказка" id="129"/>
+			<ChildItems>
+				<Table name="ТаблицаСтруктурыЗатрат" id="95">
+					<Representation>List</Representation>
+					<ReadOnly>true</ReadOnly>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ТаблицаСтруктурыЗатрат</DataPath>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<ShowCommandBar>auto</ShowCommandBar>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаСтруктурыЗатратКонтекстноеМеню" id="96"/>
+					<AutoCommandBar name="ТаблицаСтруктурыЗатратКоманднаяПанель" id="97">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаСтруктурыЗатратРасширеннаяПодсказка" id="98"/>
+					<SearchStringAddition name="ТаблицаСтруктурыЗатратСтрокаПоиска" id="99">
+						<AdditionSource>
+							<Item>ТаблицаСтруктурыЗатрат</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<Font ref="style:Calibri12" kind="StyleItem"/>
+						<ContextMenu name="ТаблицаСтруктурыЗатратСтрокаПоискаКонтекстноеМеню" id="100"/>
+						<ExtendedTooltip name="ТаблицаСтруктурыЗатратСтрокаПоискаРасширеннаяПодсказка" id="101"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаСтруктурыЗатратСостояниеПросмотра" id="102">
+						<AdditionSource>
+							<Item>ТаблицаСтруктурыЗатрат</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<Font ref="style:Calibri12" kind="StyleItem"/>
+						<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+						<ContextMenu name="ТаблицаСтруктурыЗатратСостояниеПросмотраКонтекстноеМеню" id="103"/>
+						<ExtendedTooltip name="ТаблицаСтруктурыЗатратСостояниеПросмотраРасширеннаяПодсказка" id="104"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаСтруктурыЗатратУправлениеПоиском" id="105">
+						<AdditionSource>
+							<Item>ТаблицаСтруктурыЗатрат</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<Font ref="style:Calibri12" kind="StyleItem"/>
+						<ContextMenu name="ТаблицаСтруктурыЗатратУправлениеПоискомКонтекстноеМеню" id="106"/>
+						<ExtendedTooltip name="ТаблицаСтруктурыЗатратУправлениеПоискомРасширеннаяПодсказка" id="107"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="ТаблицаСтруктурыЗатратСтатья" id="116">
+							<DataPath>ТаблицаСтруктурыЗатрат.Статья</DataPath>
+							<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterFont ref="style:Calibri12" kind="StyleItem"/>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<Font ref="style:Calibri12" kind="StyleItem"/>
+							<ContextMenu name="ТаблицаСтруктурыЗатратСтатьяКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="ТаблицаСтруктурыЗатратСтатьяРасширеннаяПодсказка" id="118"/>
+						</InputField>
+						<InputField name="ТаблицаСтруктурыЗатратСумма" id="120">
+							<DataPath>ТаблицаСтруктурыЗатрат.Сумма</DataPath>
+							<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterFont ref="style:Calibri12" kind="StyleItem"/>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<Font ref="style:Calibri12" kind="StyleItem"/>
+							<ContextMenu name="ТаблицаСтруктурыЗатратСуммаКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="ТаблицаСтруктурыЗатратСуммаРасширеннаяПодсказка" id="122"/>
+						</InputField>
+						<InputField name="ТаблицаСтруктурыЗатратДоля" id="124">
+							<DataPath>ТаблицаСтруктурыЗатрат.Доля</DataPath>
+							<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+							<EditMode>EnterOnInput</EditMode>
+							<FooterFont ref="style:Calibri12" kind="StyleItem"/>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<Font ref="style:Calibri12" kind="StyleItem"/>
+							<ContextMenu name="ТаблицаСтруктурыЗатратДоляКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="ТаблицаСтруктурыЗатратДоляРасширеннаяПодсказка" id="126"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АнализСебестоимости</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Номенклатура" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.НоменклатураМолочнойПродукции</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ДатаОкончания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата окончания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Себестоимость" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Себестоимость</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтоимостьСырья" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СтоимостьСырья</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтоимостьТруда" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СтоимостьТруда</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НакладныеРасходы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НакладныеРасходы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтоимостьБрака" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СтоимостьБрака</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтоимостьУпаковки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СтоимостьУпаковки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Рентабельность" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рентабельность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИндексБрака" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индекс брака</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыходПродукта" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выход продукта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстАнализаИИ" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст анализа ИИ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСтруктурыЗатрат" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица структуры затрат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Статья" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Доля" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СебестоимостьЕдиницы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Себестоимость единицы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьАнализ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать анализ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать анализ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьАнализ</Action>
+		</Command>
+	</Commands>
+</Form>

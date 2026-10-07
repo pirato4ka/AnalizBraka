@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<Report uuid="2c95d221-4774-4666-b341-6f106b61ddbf">
+		<InternalInfo>
+			<xr:GeneratedType name="ReportObject.ПрогнозБрака" category="Object">
+				<xr:TypeId>8e5c4d73-0828-4cb6-ba0b-d9a9f44659fe</xr:TypeId>
+				<xr:ValueId>72b5bab1-09fb-4bd0-b6a2-b5d9edbe7544</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ReportManager.ПрогнозБрака" category="Manager">
+				<xr:TypeId>ef5389eb-a48b-4f11-aaaf-3ee56720d95a</xr:TypeId>
+				<xr:ValueId>4da156ef-9d56-40ae-ab44-e02e2a9d3b52</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПрогнозБрака</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогноз брака производства</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>Прогноз брака производства</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>Report.ПрогнозБрака.Form.ФормаОтчета</DefaultForm>
+			<AuxiliaryForm/>
+			<MainDataCompositionSchema>Report.ПрогнозБрака.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<DefaultSettingsForm>Report.ПрогнозБрака.Form.ФормаНастроек</DefaultSettingsForm>
+			<AuxiliarySettingsForm/>
+			<DefaultVariantForm/>
+			<AuxiliaryVariantForm/>
+			<VariantsStorage/>
+			<SettingsStorage/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаОтчета</Form>
+			<Form>ФормаНастроек</Form>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+		</ChildObjects>
+	</Report>
+</MetaDataObject>

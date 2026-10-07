@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="НомерИДата" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер и дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер и дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="НомерИДатаРасширеннаяПодсказка" id="98"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="5">
+					<DataPath>Объект.Date</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="7"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ДокументыОснования" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы основания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы основания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ДокументыОснованияРасширеннаяПодсказка" id="100"/>
+			<ChildItems>
+				<InputField name="ЗаказНаПроизводство" id="9">
+					<DataPath>Объект.ЗаказНаПроизводство</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="ЗаказНаПроизводствоКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ЗаказНаПроизводствоРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="ЭтапПроизводства" id="13">
+					<DataPath>Объект.ЭтапПроизводства</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="ЭтапПроизводстваКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ЭтапПроизводстваРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">ЭтапПроизводстваПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ОсновныеДанные" id="101">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ОсновныеДанныеРасширеннаяПодсказка" id="102"/>
+			<ChildItems>
+				<InputField name="Номенклатура" id="17">
+					<DataPath>Объект.Номенклатура</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ЕдиницаИзмерения" id="25">
+					<DataPath>Объект.ЕдиницаИзмерения</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="ЕдиницаИзмеренияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЕдиницаИзмеренияРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<InputField name="Склад" id="29">
+					<DataPath>Объект.Склад</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="СкладКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СрокГодности" id="33">
+					<DataPath>Объект.СрокГодности</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="СрокГодностиКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="СрокГодностиРасширеннаяПодсказка" id="35"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="КоличественныеПоказатели" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количественные показатели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количественные показатели</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="КоличественныеПоказателиРасширеннаяПодсказка" id="104"/>
+			<ChildItems>
+				<InputField name="КоличествоФакт" id="21">
+					<DataPath>Объект.КоличествоФакт</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="КоличествоФактКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="КоличествоФактРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="СебестоимостьЕдиницы" id="37">
+					<DataPath>Объект.СебестоимостьЕдиницы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="СебестоимостьЕдиницыКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="СебестоимостьЕдиницыРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ОбщаяСебестоимость" id="41">
+					<DataPath>Объект.ОбщаяСебестоимость</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="ОбщаяСебестоимостьКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ОбщаяСебестоимостьРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="45">
+			<DataPath>Объект.Комментарий</DataPath>
+			<TitleTextColor>style:AccentColor</TitleTextColor>
+			<TitleFont ref="style:Calibri12" height="13" kind="StyleItem"/>
+			<EditMode>EnterOnInput</EditMode>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<Font ref="style:Calibri12" kind="StyleItem"/>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="47"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВыпускГотовойПродукции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

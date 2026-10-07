@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="КодИНаименование" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код и наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код и наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КодИНаименованиеРасширеннаяПодсказка" id="67"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Наименование" id="5">
+					<DataPath>Объект.Description</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="7"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ОсновныеДанные" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ОсновныеДанныеРасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<InputField name="Цех" id="9">
+					<DataPath>Объект.Цех</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="ЦехКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ЦехРасширеннаяПодсказка" id="11"/>
+				</InputField>
+				<InputField name="Бригадир" id="13">
+					<DataPath>Объект.Бригадир</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="БригадирКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="БригадирРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Состав" id="17">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Состав</DataPath>
+			<Font ref="style:Calibri12" kind="StyleItem"/>
+			<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СоставКонтекстноеМеню" id="18"/>
+			<AutoCommandBar name="СоставКоманднаяПанель" id="19"/>
+			<ExtendedTooltip name="СоставРасширеннаяПодсказка" id="20"/>
+			<SearchStringAddition name="СоставСтрокаПоиска" id="21">
+				<AdditionSource>
+					<Item>Состав</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<Font ref="style:Calibri12" kind="StyleItem"/>
+				<ContextMenu name="СоставСтрокаПоискаКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="СоставСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СоставСостояниеПросмотра" id="24">
+				<AdditionSource>
+					<Item>Состав</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<Font ref="style:Calibri12" kind="StyleItem"/>
+				<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+				<ContextMenu name="СоставСостояниеПросмотраКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="СоставСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СоставУправлениеПоиском" id="27">
+				<AdditionSource>
+					<Item>Состав</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<Font ref="style:Calibri12" kind="StyleItem"/>
+				<ContextMenu name="СоставУправлениеПоискомКонтекстноеМеню" id="28"/>
+				<ExtendedTooltip name="СоставУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СоставНомерСтроки" id="38">
+					<DataPath>Объект.Состав.LineNumber</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterFont ref="style:Calibri12" kind="StyleItem"/>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="СоставНомерСтрокиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СоставНомерСтрокиРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+				<InputField name="СоставСотрудник" id="42">
+					<DataPath>Объект.Состав.Сотрудник</DataPath>
+					<TitleFont ref="style:Calibri12" kind="StyleItem"/>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterFont ref="style:Calibri12" kind="StyleItem"/>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:Calibri12" kind="StyleItem"/>
+					<ContextMenu name="СоставСотрудникКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="СоставСотрудникРасширеннаяПодсказка" id="44"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Бригады</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

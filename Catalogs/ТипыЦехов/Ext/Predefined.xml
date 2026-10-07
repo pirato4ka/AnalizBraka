@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.21">
+	<Item id="d37d67a4-625a-4901-ae7c-f6014111ceb4">
+		<Name>Пастеризации</Name>
+		<Code>000000002</Code>
+		<Description>Пастеризации</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="935a6526-9bdf-4cd9-9e5c-c8f1a43bdee5">
+		<Name>Приемный</Name>
+		<Code>000000001</Code>
+		<Description>Приемный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1cf39afb-e9ec-4f21-ade7-eb4ddfbb08d0">
+		<Name>Фасовки</Name>
+		<Code>000000004</Code>
+		<Description>Фасовки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f75decc5-0694-43b6-a339-bc8a65ffb701">
+		<Name>Ферментации</Name>
+		<Code>000000003</Code>
+		<Description>Ферментации</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
